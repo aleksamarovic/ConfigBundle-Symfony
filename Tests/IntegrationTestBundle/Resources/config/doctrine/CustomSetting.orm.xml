@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<doctrine-mapping
+	xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+	<entity name="Craue\ConfigBundle\Tests\IntegrationTestBundle\Entity\CustomSetting" repository-class="Craue\ConfigBundle\Repository\SettingRepository" table="craue_config_setting_custom">
+		<field name="value" column="value" type="text" nullable="true" />
+		<field name="comment" column="comment" type="string" nullable="true" />
+	</entity>
+</doctrine-mapping>
